@@ -9,5 +9,5 @@ router.get('/uploads/:imageName',(req,res)=>{
     res.headersSent('Content-Type','image/jpeg')
     res.sendFile(path.join(__dirname,'..','uploads',imageName))
 })
-router.delete(':/productId',productController,productController.deleteProductById)
+router.delete(':/productId',productController.deleteProductById)
 module.exports=router
